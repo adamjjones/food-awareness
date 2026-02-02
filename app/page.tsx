@@ -1,4 +1,5 @@
 import Image from "next/image";
+import QuizGame from "./QuizGame";
 
 export default function Home() {
   return (
@@ -17,8 +18,20 @@ export default function Home() {
             is to empower consumers to make informed choices about what they eat
             by offering detailed insights into the components of their favorite
             foods.
-
           </p>
+           <h3 className="text-3xl font-semibold leading-8 text-black dark:text-zinc-50">
+            The Problem
+          </h3>
+          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+            Many consumers are unaware of the specific ingredients and nutritional
+            content of the food products they purchase. This lack of transparency
+            can lead to unhealthy eating habits and difficulty in making informed
+            choices. Our platform aims to address this issue by providing clear
+            and accessible information about food products.
+          </p>
+          {/* Quiz Game Start */}
+          <QuizGame />
+          {/* Quiz Game End */}
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
